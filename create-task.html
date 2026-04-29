@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Nova Tarefa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Sistema de Tarefas</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">Minhas Tarefas</a>
+        <a href="create-task.html" class="active">Criar Tarefa</a>
+        <a href="#">Configurações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </aside>
+    
+    <main class="main-content">
+      <h1>Dashboard</h1>
+      <h2>Criar Nova Tarefa</h2>
+      
+      <div class="task-details-card">
+        <form action="dashboard.html" method="get">
+          <div class="form-group">
+            <label for="title">Título da Tarefa</label>
+            <input type="text" id="title" name="title" placeholder="Ex: Fazer compras da semana" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Descrição (Opcional)</label>
+            <textarea id="description" name="description" placeholder="Detalhes sobre a tarefa..."></textarea>
+          </div>
+          <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+            <button type="submit" class="btn btn-primary">Salvar Tarefa</button>
+            <a href="dashboard.html" class="btn btn-secondary">Cancelar</a>
+          </div>
+        </form>
+      </div>
+      <script src="main.js" defer></script>
+      <footer>
+        © 2026 Projeto Acadêmico
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Minhas Tarefas</title>
+  <link rel="stylesheet" href="styles.css">
+<body>
+  <div class="app-container">
+    <!-- Sidebar / Menu -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Sistema de Tarefas</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="active">Minhas Tarefas</a>
+        <a href="create-task.html">Criar Tarefa</a>
+        <a href="#">Configurações</a>
+        <a href="index.html">Sair</a>
+      </nav>
+    </aside>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <h1>Dashboard</h1>
+      <h2>Minhas Tarefas</h2>
+      
+      <div class="tasks-grid" id="tasksGrid"></div>
+        <p id="noTasksMessage" style="display: none; text-align: center; color: #7f8c8d;">Nenhuma tarefa encontrada. Crie sua primeira tarefa!</p>
+      <script src="main.js" defer></script>
+      <footer>
+        © 2026 Projeto Acadêmico
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
